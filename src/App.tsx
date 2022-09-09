@@ -1,7 +1,7 @@
-import React, {useState} from 'react';
-import './App.css';
-import {Display} from "./component/display/Display";
-import {Button} from "./component/button/Button";
+import React, {useState} from 'react'
+import './App.css'
+import {Display} from "./component/display/Display"
+import {Button} from "./component/button/Button"
 
 function App() {
 

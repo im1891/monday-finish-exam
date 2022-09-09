@@ -10,16 +10,12 @@ export const Button: React.FC<PropsType> = (props) => {
 
     const {callBack, disabled, className, title, ...restProps} = props
 
-    const onClickButtonHandler = () => {
-
-        callBack && callBack()
-
-    }
 
     return (
         <button className={className ? className : ''}
-                onClick={onClickButtonHandler}
+                onClick={callBack}
                 disabled={disabled}
-                {...restProps}>{title} </button>
+                {...restProps}>{title}
+        </button>
     )
 }
