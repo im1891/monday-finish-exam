@@ -22,8 +22,8 @@ function App() {
             <Display count={counter}/>
 
             <div className='buttonBlockWrapper'>
-                <Button title={'inc'} callBack={incrCounter} disabled={counter === 5} className={'button'}/>
-                <Button title={'reset'} callBack={resetCount} disabled={counter === 0} className={'button'}/>
+                <Button onClick={incrCounter} disabled={counter === 5} className={'button'}>inc</Button>
+                <Button onClick={resetCount} disabled={counter === 0} className={'button'}>reset</Button>
             </div>
         </div>
     );
